@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>将进酒</title>
+    <link rel="stylesheet" href="css/quan.css">
+</head>
+<body>
+    <div class="shell">
+        <div class="content">
+            <h2>将进酒</h2>
+            <div class="images">
+                <div class="img1" id="img1"></div>
+                <div class="img2" id="img2"></div>
+                <div class="img3" id="img3"></div>
+                <div class="img4" id="img4"></div>
+                <div class="img5"></div>
+            </div>
+        </div>
+
+        <div class="yuan1" id="yuan1"></div>
+        <div class="yuan2" id="yuan2"></div>
+        <div class="yuan3" id="yuan3"></div>
+        <div class="yuan4" id="yuan4"></div>
+        <div class="yuan5" id="yuan5"></div>
+
+        
+        <a href="listen.html">
+            <button class="one">
+                <span>Part1 诗歌初识</span>
+            </button>
+        </a>
+
+        <a href="author.html">
+            <button class="twoo">
+                <span>Part2 走近作者</span>
+            </button>
+        </a>
+        
+        <a href="beijin.html">
+            <button class="two">
+                <span>Part3 诗歌背景</span>
+            </button>
+        </a>
+
+        <a href="shangxi.html">
+            <button class="three">
+                <span>Part4 诗歌赏析</span>
+            </button>
+        </a>
+        
+        <a href="timu.html">
+            <button class="four">
+                <span>Part5 巩固练习</span>
+            </button>
+        </a>
+    </div>
+    <script>
+        let img3 = document.querySelector('.img3')
+        let img4 = document.querySelector('.img4')
+        let img5 = document.querySelector('.img5')
+        document.addEventListener('mousemove',e=>{
+            let mouseX = e.clientX
+            let mouseY = e.clientY
+
+            let img3x=img3.offsetLeft
+            let img3y=img3.offsetTop
+
+            let img4x=img4.offsetLeft
+            let img4y=img4.offsetTop
+
+            let img5x=img5.offsetLeft
+            let img5y=img5.offsetTop
+
+            let diff3x=(mouseX-img3x)/30
+            let diff3y=(mouseY-img3y)/30
+
+            let diff4x=(mouseX-img4x)/40
+            let diff4y=(mouseY-img4y)/40
+
+            let diff5x=(mouseX-img5x)/50
+            let diff5y=(mouseY-img5y)/50
+
+            img3.style.transform=`translate(${diff3x}px,${diff3y}px)`
+            img4.style.transform=`translate(${diff4x}px,${diff4y}px)`
+            img5.style.transform=`translate(${diff5x}px,${diff5y}px)`
+        })
+    </script>
+</body>
+</html>

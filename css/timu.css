@@ -1,0 +1,49 @@
+h2 {
+	margin-left: 45%;
+}
+h3 {
+	text-align: center;
+}
+body{
+	font-size: 25px;
+	font-family:楷体,sans-serif;
+	font-weight:bold;
+	background-image:url("../image/shangxi-beijing.png");
+}
+.big {
+	width: 70%;
+	margin-left: 20%;
+}
+button {
+	width: 70px;
+	height: 40px;
+	background-color: blanchedalmond;
+	border-radius: 10px;
+	
+}
+.tijiao {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-left: 60%;
+}
+.ren {
+	width: 13%;
+	height: 45%;
+	position: fixed;
+	bottom: 1%;
+	left: 3%;
+	background-image: url("../image/libai8.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.fanhui {
+    width: 4%;
+    height: 4%;
+    background-image: url("../image/fanhui.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: fixed;
+    top: 8.5%;
+    right: 0;
+    z-index: 9999;
+}

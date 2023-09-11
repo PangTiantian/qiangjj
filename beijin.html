@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诗歌背景</title>
+    <link rel="stylesheet" href="css/beijin.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        .juchang {
+            width: 500%;
+        }
+    </style>
+</head>
+<body>
+    <div class="shell">
+        <div class="juchang">
+            <div class="yidong1" litem="page">
+                <div class="tangxuanzong">
+                    <span class="name1">唐玄宗</span>
+                    <img class="img1" src="image/tangxuanzong.png" alt="">
+                </div>
+                <div class="yangguifei">
+                    <span class="name2">杨贵妃</span>
+                    <img class="img2" src="image/yangguifei.png" alt="">
+                </div>
+                <div class="libai">
+                    <span class="name3">李白</span>
+                    <img class="img3" src="image/libai11.png" alt="">
+                </div>
+                <div class="gaolishi">
+                    <span class="name4">高力士</span>
+                    <img class="img4" src="image/gaolishi.png" alt="">
+                </div>
+                <div class="wenben1"></div>
+            </div>
+
+            <div class="yidong2" litem="page">
+                <img class="img5" src="image/libai16.png" alt="">
+                <img class="img6" src="image/year.png" alt="">
+                <img class="img7" src="image/libai17.png" alt="">
+                <div class="wenben2"></div>
+            </div>
+
+            <div class="yidong3" litem="page">
+                <img class="img8" src="image/libai18.png" alt="">
+                <div class="wenben3"></div>
+            </div>
+
+            <div class="yidong4" litem="page">
+                <div class="libai">
+                    <span class="name5">李白</span>
+                    <img class="img9" src="image/libai.png" alt="">
+                </div>
+                <div class="danqiusheng">
+                    <span class="name6">元丹丘</span>
+                    <img class="img10" src="image/danqiusheng.png" alt="">
+                </div>
+                <div class="cenfuzi">
+                    <span class="name7">岑勋</span>
+                    <img class="img11" src="image/cenfuzi.png" alt="">
+                </div>
+                <div class="wenben4"></div>
+            </div>
+
+            <div class="yidong5" litem="page">
+                <div class="wenben5"></div>
+                <div class="content">
+                    &nbsp;&nbsp;<b>关于这首诗的写作时间， 说法不一。</b><br/>
+                    ①管士光《李白诗集新注》认为此诗当作于唐玄宗
+                    开元二十二年 (734年) 秋， 
+                    当时李白应邀至嵩山元丹丘隐居之处，
+                     岑勋当时也在那里， 三人置酒高会， 席间李白写了此诗。<br/>
+                     ②郁贤皓《李白集》认为此诗约作于开元二十四年 (736年) 前后。<br/>
+                     ③黄锡珪《李太白编年诗集目录》系此诗于天宝十一载 (752年) 。<br/>
+                     <b>④一般认为这是李白天宝年间离京后 ， 漫游梁、宋， 
+                     与友人岑勋、元丹丘相会时所作。</b>
+                </div>
+                <img class="img12" src="image/libai14.png" alt="">
+            </div>
+        </div>
+
+        <div class="duihua"></div>
+            <div class="clickbutton">
+                <div class="left" id="prev"></div>
+                <div class="right" id="next"></div>
+            </div>
+    </div>
+    <a href="quan.html">
+        <div class="fanhui"></div>
+    </a>
+</body>
+<script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+<script>
+    $(function(){
+        var index=0;
+        var num=100;
+        var move
+        $("#next").click(function(){
+            if(index==4){
+                index=0
+                move=num*index
+                $(".juchang").css("left","-"+move+"%")
+                return
+            }
+            index++
+            move=num*index
+            $(".juchang").css("left","-"+move+"%")
+        });
+        $("#prev").click(function(){
+            if(index==0){
+                index=4
+                move=num*index
+                $(".juchang").css("left","-"+move+"%")
+                return
+            }
+            index--
+            move=num*index
+            $(".juchang").css("left","-"+move+"%")
+        })
+    })
+</script>
+</html>

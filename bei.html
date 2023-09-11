@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>文章赏析-悲</title>
+    <link rel="stylesheet" href="css/bei.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <style>
+        body .shell-main-nav ul .nav-box {
+            left: 120px;
+        }
+        .juchang {
+            width: 300%;
+        }
+    </style>
+</head>
+<body>
+    <div class="shell">
+            <div class="shell-main-nav">
+                <div class="logo">
+                    <img src="image/quan-jiubei.png" alt="">
+                    <span>《将进酒》全文赏析</span>
+                </div>
+                <ul>
+                    <li><a href="shangxi.html">全文释义</a></li>
+                    <li><a href="bei.html">情感·悲</a></li>
+                    <li><a href="le.html">情感·乐</a></li>
+                    <li><a href="fen.html">情感·愤</a></li>
+                    <li><a href="kuang.html">情感·狂</a></li>
+                    <div class="nav-box"></div>
+                </ul>
+            </div>
+
+            <div class="juchang">
+                <div class="yidong1" litem="page">
+                    <div class="libai">
+                        <span class="name1">李白</span>
+                        <img class="img1" src="image/libai.png" alt="">
+                        <div class="wenben1"></div>
+                    </div>
+                    <div class="danqiusheng">
+                        <span class="name2">元丹丘</span>
+                        <img class="img2" src="image/danqiusheng.png" alt="">
+                        <div class="wenben2"></div>
+                    </div>
+                    <div class="cenfuzi">
+                        <span class="name3">岑勋</span>
+                        <img class="img3" src="image/cenfuzi.png" alt="">
+                        <div class="wenben3"></div>
+                    </div>
+                </div>
+                
+                <div class="yidong2" litem="page">
+                    <div class="page2-libai">
+                        <img class="img4" src="image/libai2.png" alt="">
+                    </div>
+                    <div class="huanghe"></div>
+                    <div class="wenben4"></div>
+                    <div class="juanzhou" id="juanzhou"></div>
+                    <div class="zhishi" id="zhishi">
+                        <div class="zhishidian" id="zhishidian">
+                                <h2>诗句赏析：</h2><br/>
+                                <font color="blue">君不见黄河之水天上来，奔流到海不复回。</font><br/>
+                                是空间范畴的夸张，黄河源远流长，落差极大，如从天而降，一泻千里，
+                                东走大海，造成极大的视觉冲击，
+                                然而，如此壮浪景象，绝非肉眼可见，而是作者想落天外。
+                                上句写大河之来，势不可挡；下句写大河之去，势不可回。
+                                <br/><br/><font color="blue">君不见高堂明镜悲白发，朝如青丝暮成雪。</font><br/>
+                                是时间范畴的夸张，一波未平，一波又起，这两句将人生两端的镜头直接剪辑在一起，
+                                青春与暮年——就是为了获取触目惊心的艺术效果。<br/>
+                                <br/><font color="blue">开篇这组排比长句既有比意，以河水一去不返喻人生易逝，
+                                又有反衬作用，以黄河的伟大永恒形容出生命的渺小脆弱。
+                                开端可谓悲感已极，却不堕纤弱，巨人式的感伤，具有惊心动魄的艺术力量。</font>
+                        </div>
+                        <div class="chacha" id="chacha"></div>
+                    </div>
+                </div>
+                
+                <div class="yidong3" litem="page">
+                    <div class="libai3">
+                        <img class="img5" src="image/libai3.png" alt=""> 
+                        <span class="name4">青年时期</span>
+                    </div>
+                    <div class="libai4">
+                        <img class="img6" src="image/libai4.png" alt="">
+                        <span class="name5">暮年时期</span>
+                        <div class="wenben5"></div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="duihua"></div>
+            <div class="clickbutton">
+                <div class="left" id="prev"></div>
+                <div class="right" id="next"></div>
+            </div>
+    </div>
+    <a href="shangxi.html">
+        <div class="fanhui"></div>
+    </a>
+</body>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            var index=0;
+            var num=100;
+            var move
+            $("#next").click(function(){
+                if(index==2){
+                    index=0
+                    move=num*index
+                    $(".juchang").css("left","-"+move+"%")
+                    return
+                }
+                index++
+                move=num*index
+                $(".juchang").css("left","-"+move+"%")
+            });
+            $("#prev").click(function(){
+                if(index==0){
+                    index=2
+                    move=num*index
+                    $(".juchang").css("left","-"+move+"%")
+                    return
+                }
+                index--
+                move=num*index
+                $(".juchang").css("left","-"+move+"%")
+            })
+        })
+
+        var juanzhou=document.getElementById("juanzhou")
+        var zhishi=document.getElementById("zhishi")
+        var chacha=document.getElementById("chacha")
+        juanzhou.onmousemove=function(){
+            juanzhou.style.backgroundImage="url('image/juanzhou2.png')"
+        }
+        juanzhou.onmouseout=function(){
+            juanzhou.style.backgroundImage="url('image/juanzhou1.png')"
+        }
+        juanzhou.onclick=function(){
+            zhishi.style.display="block"
+        }
+        chacha.onclick=function(){
+            zhishi.style.display="none"
+        }
+    </script>
+</html>

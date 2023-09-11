@@ -1,0 +1,178 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'font';
+  src: url("../font.OTF");
+}
+.juchang .yidong1,.juchang .yidong2,.juchang .yidong3,
+.juchang .yidong4,.juchang .yidong5 {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    position: absolute;
+}
+.img1 {
+  width: 11%;
+  left: 4%;
+  display: flex;
+  position: absolute;
+  bottom: 25%;
+}
+.img2 {
+  width: 17%;
+  left: 20%;
+  display: flex;
+  position: absolute;
+  bottom: 25%;
+}
+.img3 {
+  width: 30%;
+  left: 40%;
+  display: flex;
+  position: absolute;
+  bottom: 25%;
+}
+.img4 {
+  width: 19%;
+  left: 70%;
+  display: flex;
+  position: absolute;
+  bottom: 25%;
+}
+.yidong1  span,.yidong4 span {
+  width: 25px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  font: 400 25px '隶书';
+   top: 60%;
+}
+.name1 {
+  left: 2%;
+}
+.name2 {
+  left: 18%;
+}
+.name3 {
+  left: 38%;
+}
+.name4 {
+  left: 90%;
+}
+.wenben1 {
+  width: 30%;
+  height: 30%;
+  position: absolute;
+  left: 38%;
+  top: 3%;
+  background-image: url("../image/wenzi20.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img5 {
+  width: 16%;
+  position: absolute;
+  left: 110%;
+  bottom: 15%;
+}
+.img6 {
+  width: 34%;
+  position: absolute;
+  left: 129.5%;
+  bottom: 30%;
+}
+.img7 {
+  width: 21%;
+  position: absolute;
+  left: 170%;
+  bottom: 15%;
+}
+.wenben2 {
+  width: 30%;
+  height: 25%;
+  position: absolute;
+  top: 3%;
+  left: 135%;
+  background-image: url("../image/wenzi21.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img8 {
+  width: 100%;
+  position: absolute;
+  left: 200%;
+  bottom: 15%;
+}
+.wenben3 {
+  width: 30%;
+  height: 25%;
+  position: absolute;
+  top: 3%;
+  left: 245%;
+  background-image: url("../image/wenzi22.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img9 {
+  width: 13%;
+  position: absolute;
+  left: 312%;
+  bottom: 14%;
+}
+.img10 {
+  width: 13%;
+  position: absolute;
+  left: 375%;
+  bottom: 14%;
+}
+.img11 {
+  width: 13%;
+  position: absolute;
+  left: 350%;
+  bottom: 15%;
+}
+.name5 {
+  left: 307%;
+}
+.name6 {
+  left: 391%;
+}
+.name7 {
+  left: 347%;
+}
+.wenben4 {
+  width: 30%;
+  height: 22%;
+  position: absolute;
+  top: 3%;
+  left: 325%;
+  background-image: url("../image/wenzi23.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.wenben5 {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 3%;
+  left: 410%;
+  background-image: url("../image/wenzi24.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.content {
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  top: 14%;
+  left: 415%;
+  font: 400 27px 'font';
+}
+.img12 {
+  width: 23%;
+  position: absolute;
+  left: 465%;
+  bottom: 20%;
+}

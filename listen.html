@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>诗歌欣赏</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            width: 100%;
+            height: 100%;
+            background-image: url("image/shangxi-beijing.png");
+
+        }
+        .bei {
+            width: 80%;
+            height: 80%;
+            background-image: url("image/listen-beijing.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: absolute;
+            top: 2%;
+            right: 5%;
+        }
+        audio {
+            position: absolute;
+            width: 40%;
+            height: 20%;
+            bottom: 8%;
+            left: 35%;
+        }
+        .renwu {
+            background-image: url("image/libai8.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 20%;
+            height: 45%;
+            position: absolute;
+            left: 4%;
+            bottom: 2%;
+        }
+        .fanhui {
+            width: 4%;
+            height: 4%;
+            background-image: url("image/fanhui.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            position: fixed;
+            top: 8%;
+            right: 1%;
+            z-index: 9999;
+        }
+    </style>
+</head>
+<body>
+    <div class="bei"></div>
+    <audio controls="controls" loop="loop">
+        <source src="langsong.mp3" type="audio/mp3"></source>
+    </audio>
+    <div class="renwu"></div>
+    <a href="quan.html">
+        <div class="fanhui"></div>
+    </a>
+</body>
+</html>

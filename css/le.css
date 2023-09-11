@@ -1,0 +1,235 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'font';
+  src: url("../font.OTF");
+}
+.juchang .yidong1,.juchang .yidong2,.juchang .yidong3,.juchang .yidong4 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+}
+.img1 {
+  width: 20%;
+  left: 10%;
+  display: flex;
+  position: absolute;
+  bottom: 10%;
+}
+.wenben1 {
+  width: 300px;
+  height: 200px;
+  background-image: url("../image/wenzi6.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 22%;
+    top: 10%;
+    position: absolute;
+}
+.juan1 {
+  width: 45%;
+  height: 60%;
+  background-image: url("../image/juanzhou3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 15%;
+  left: 46%;
+}
+.content1 {
+  width: 65%;
+  height: 40%;
+  font: 300 30px 'font';
+  margin-left: 23%;
+  margin-top: -25%;
+}
+.juan1 h3 {
+  width: 100%;
+  height: 20%;
+  font: 400 30px 'font';
+  color: rgb(149, 16, 16);
+  margin-top: 6%;
+  margin-left: 10%;
+}
+.dao {
+  width: 35px;
+  height: 200px;
+  font: 600 50px '隶书';
+  color: rgb(121, 11, 11);
+  margin-left: 9%;
+  margin-top: 3%;
+}
+.img2 {
+  width: 40%;
+  left: 110%;
+  position: absolute;
+  bottom: 15%;
+}
+.yue {
+  width: 20%;
+  height: 20%;
+  background-image: url("../image/yueliang.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 10%;
+  left: 170%;
+}
+.wenben2 {
+  width: 300px;
+  height: 200px;
+  background-image: url("../image/wenzi7.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 132%;
+    top: 10%;
+    position: absolute;
+}
+.juanzhou {
+  width: 120px;
+  height: 120px;
+  background-image: url("../image/juanzhou1.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+}
+#juanzhou1 {
+  left: 150%;
+  top: 20%;
+}
+#juanzhou2 {
+  left: 275%;
+  top: 10%;
+}
+#juanzhou3 {
+  left: 345%;
+  top: 13%;
+}
+.zhishi {
+  background-image: url("../image/juanzhou3.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  width: 70%;
+  height: 90%;
+  top: 7%;
+}
+#zhishi {
+  left: 115%;
+}
+#zhishi2 {
+  left: 215%;
+}
+#zhishi3 {
+  left: 315%;
+}
+.zhishidian {
+  position: absolute;
+  top: 8%;
+  left: 12%;
+  width: 60%;
+  height: 80%;
+  font: 300 28px 'font';
+}
+
+.chacha {
+  width: 40px;
+  height: 40px;
+  background-image: url("../image/chacha.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 80%;
+}
+#chacha {
+  top: 12%;
+}
+#chacha2 {
+  top: 12%;
+}
+#chacha3 {
+  top: 12%;
+}
+.img3 {
+  width: 23%;
+  left: 270%;
+  position: absolute;
+  bottom: 15%;
+}
+.jinzi {
+  width: 42%;
+  height: 20%;
+  background-image: url("../image/jinzi.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  left: 230%;
+  bottom: 20%;
+}
+.wenben3 {
+  width: 300px;
+  height: 200px;
+  background-image: url("../image/wenzi8.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 255%;
+    top: 10%;
+    position: absolute;
+}
+.img4 {
+  width: 16%;
+  left: 210%;
+  position: absolute;
+  bottom: 15%;
+}
+.wenben4 {
+  width: 200px;
+  height: 200px;
+  background-image: url("../image/wenzi9.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 225%;
+    top: 10%;
+    position: absolute;
+}
+.img5 {
+  width: 40%;
+  left: 310%;
+  position: absolute;
+  bottom: 20%;
+}
+.wenben5 {
+  width: 300px;
+  height: 200px;
+  background-image: url("../image/wenzi10.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 325%;
+    top: 10%;
+    position: absolute;
+}
+.img6 {
+  width: 12%;
+  left: 350%;
+  position: absolute;
+  bottom: 20%;
+}
+.img7 {
+  width: 12%;
+  left: 365%;
+  position: absolute;
+  bottom: 20%;
+}
+.wenben6 {
+  width: 200px;
+  height: 200px;
+  background-image: url("../image/wenzi11.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: 378%;
+    top: 15%;
+    position: absolute;
+}
